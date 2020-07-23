@@ -13,6 +13,9 @@ if (parent == NULL)
 	return (NULL);
 
 binary_tree_t *node_left = malloc(sizeof(binary_tree_t));
+if (!node_left)
+	return (NULL);
+
 node_left->parent = parent;
 node_left->left = NULL;
 node_left->right = NULL;
