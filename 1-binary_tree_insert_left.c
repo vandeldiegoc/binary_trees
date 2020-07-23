@@ -20,7 +20,7 @@ node_left->parent = parent;
 node_left->left = NULL;
 node_left->right = NULL;
 node_left->n = value;
-if (parent->left != NULL)
+if (parent->left)
 {
 	node_left->left = parent->left;
 	parent->left->parent = node_left;
